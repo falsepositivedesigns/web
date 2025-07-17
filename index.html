@@ -6,28 +6,27 @@
     
     <!-- SEO Meta Tags -->
     <title>False+ | Anti-Surveillance Fashion & Digital Privacy Clothing</title>
-    <meta name="description" content="False+ creates innovative anti-surveillance fashion and digital privacy clothing. Shop our collection of tech-forward apparel designed to protect your privacy through fashion.">
-    <meta name="keywords" content="anti-surveillance fashion, digital privacy clothing, privacy tech, surveillance protection, fashion technology, privacy apparel, digital resistance">
+    <meta name="description" content="False+ creates anti-surveillance fashion and digital privacy clothing. Shop tech-forward apparel and learn about our mission & technology.">
+    <meta name="keywords" content="anti-surveillance fashion, digital privacy clothing, privacy tech, privacy apparel, digital resistance">
     <meta name="author" content="False+ Designs">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#00ffff">
     <link rel="canonical" href="https://falsepositivedesigns.com">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Social Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://falsepositivedesigns.com">
     <meta property="og:title" content="False+ | Anti-Surveillance Fashion & Digital Privacy Clothing">
-    <meta property="og:description" content="False+ creates innovative anti-surveillance fashion and digital privacy clothing. Shop our collection of tech-forward apparel designed to protect your privacy through fashion.">
+    <meta property="og:description" content="False+ creates anti-surveillance fashion and digital privacy clothing. Shop tech-forward apparel and learn about our mission & technology.">
     <meta property="og:image" content="https://raw.githubusercontent.com/falsepositivedesigns/web/main/assets/false_logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="False+ Designs">
     
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://falsepositivedesigns.com">
     <meta property="twitter:title" content="False+ | Anti-Surveillance Fashion & Digital Privacy Clothing">
-    <meta property="twitter:description" content="False+ creates innovative anti-surveillance fashion and digital privacy clothing. Shop our collection of tech-forward apparel designed to protect your privacy through fashion.">
+    <meta property="twitter:description" content="False+ creates anti-surveillance fashion and digital privacy clothing. Shop tech-forward apparel and learn about our mission & technology.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/falsepositivedesigns/web/main/assets/false_logo.png">
     
     <!-- Favicon -->
@@ -57,12 +56,21 @@
     </script>
     
     <style>
+        /* ...existing CSS from previous versions... */
+        .banner-image {
+            width: 100%;
+            max-width: 380px;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+            object-fit: cover;
+        }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Courier New', monospace;
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
@@ -70,7 +78,6 @@
             min-height: 100vh;
             overflow-x: hidden;
         }
-
         .noise-overlay {
             position: fixed;
             top: 0;
@@ -84,7 +91,6 @@
             pointer-events: none;
             z-index: 1;
         }
-
         .container {
             max-width: 400px;
             margin: 0 auto;
@@ -92,32 +98,18 @@
             position: relative;
             z-index: 2;
         }
-
         .header {
             text-align: center;
             margin-bottom: 40px;
         }
-
-        .logo {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            background: linear-gradient(45deg, #ffffff, #00ffff, #ffffff);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
-            letter-spacing: 2px;
-        }
-
         .tagline {
-            font-size: 12px;
-            color: #888;
+            font-size: 14px;
+            color: #00ffff;
             letter-spacing: 1px;
             margin-bottom: 30px;
+            margin-top: 2px;
             text-transform: uppercase;
         }
-
         .profile-image {
             width: 120px;
             height: 120px;
@@ -133,20 +125,17 @@
             box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
             overflow: hidden;
         }
-
         .profile-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 50%;
         }
-
         .links {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-
         .link-item {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(0, 255, 255, 0.3);
@@ -161,7 +150,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .link-item::before {
             content: '';
             position: absolute;
@@ -172,52 +160,43 @@
             background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
             transition: left 0.5s ease;
         }
-
         .link-item:hover::before {
             left: 100%;
         }
-
         .link-item:hover {
             border-color: #00ffff;
             box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
             transform: translateY(-2px);
         }
-
         .link-content {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-
         .link-icon {
             font-size: 20px;
             color: #00ffff;
             width: 24px;
         }
-
         .link-text {
             font-size: 14px;
             font-weight: 500;
             letter-spacing: 0.5px;
         }
-
         .link-arrow {
             font-size: 16px;
             color: #666;
             transition: color 0.3s ease;
         }
-
         .link-item:hover .link-arrow {
             color: #00ffff;
         }
-
         .footer {
             text-align: center;
             margin-top: 50px;
             padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-
         .contact-email {
             color: #00ffff;
             font-size: 14px;
@@ -225,71 +204,22 @@
             transition: color 0.2s;
             word-break: break-all;
         }
-
         .contact-email:hover {
             text-decoration: underline;
             color: #ffffff;
         }
-
         .copyright {
             font-size: 11px;
             color: #444;
             letter-spacing: 1px;
         }
-
-        .glitch {
-            position: relative;
-        }
-
-        .glitch::before,
-        .glitch::after {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .glitch::before {
-            animation: glitch-1 0.5s infinite;
-            color: #ff0000;
-            z-index: -1;
-        }
-
-        .glitch::after {
-            animation: glitch-2 0.5s infinite;
-            color: #00ff00;
-            z-index: -2;
-        }
-
-        @keyframes glitch-1 {
-            0%, 14%, 15%, 49%, 50%, 99%, 100% {
-                transform: translate(0);
-            }
-            15%, 49% {
-                transform: translate(-2px, 0);
-            }
-        }
-
-        @keyframes glitch-2 {
-            0%, 20%, 21%, 62%, 63%, 99%, 100% {
-                transform: translate(0);
-            }
-            21%, 62% {
-                transform: translate(2px, 0);
-            }
-        }
-
         @media (max-width: 480px) {
             .container {
                 padding: 30px 15px;
             }
-            
-            .logo {
-                font-size: 36px;
+            .banner-image {
+                max-width: 95vw;
             }
-            
             .profile-image {
                 width: 100px;
                 height: 100px;
@@ -303,8 +233,12 @@
     
     <main class="container">
         <header class="header">
-            <h1 class="logo glitch" data-text="FALSE +">FALSE +</h1>
-            <p class="tagline">DIGITAL PRIVACY THROUGH FASHION</p>
+            <img 
+                class="banner-image"
+                src="https://raw.githubusercontent.com/falsepositivedesigns/web/main/assets/storebanner.png" 
+                alt="False+ Store - Digital Privacy Fashion Banner"
+            >
+            <p class="tagline">Join the resistance. Wear the glitch</p>
             <div class="profile-image">
                 <img src="https://raw.githubusercontent.com/falsepositivedesigns/web/main/assets/false_logo.png" alt="False+ Logo - Digital Privacy Fashion Brand">
             </div>
@@ -314,66 +248,53 @@
             <a href="https://www.contrado.com/stores/false-positive-designs" class="link-item" rel="noopener" target="_blank">
                 <div class="link-content">
                     <i class="fas fa-tshirt link-icon" aria-hidden="true"></i>
-                    <span class="link-text">SHOP COLLECTION</span>
+                    <span class="link-text">Shop</span>
                 </div>
                 <i class="fas fa-chevron-right link-arrow" aria-hidden="true"></i>
             </a>
-
-            <a href="#anti-surveillance" class="link-item">
+            <a href="#about" class="link-item">
                 <div class="link-content">
-                    <i class="fas fa-eye-slash link-icon" aria-hidden="true"></i>
-                    <span class="link-text">ANTI-SURVEILLANCE TECH</span>
+                    <i class="fas fa-id-card link-icon" aria-hidden="true"></i>
+                    <span class="link-text">About Us</span>
                 </div>
                 <i class="fas fa-chevron-right link-arrow" aria-hidden="true"></i>
             </a>
-
-            <a href="#research" class="link-item">
-                <div class="link-content">
-                    <i class="fas fa-code link-icon" aria-hidden="true"></i>
-                    <span class="link-text">PATTERN RESEARCH</span>
-                </div>
-                <i class="fas fa-chevron-right link-arrow" aria-hidden="true"></i>
-            </a>
-
-            <a href="#press" class="link-item">
-                <div class="link-content">
-                    <i class="fas fa-newspaper link-icon" aria-hidden="true"></i>
-                    <span class="link-text">PRESS & MEDIA</span>
-                </div>
-                <i class="fas fa-chevron-right link-arrow" aria-hidden="true"></i>
-            </a>
-
-            <a href="#manifesto" class="link-item">
+            <a href="#about-tech" class="link-item">
                 <div class="link-content">
                     <i class="fas fa-shield-alt link-icon" aria-hidden="true"></i>
-                    <span class="link-text">PRIVACY MANIFESTO</span>
+                    <span class="link-text">About the Tech</span>
                 </div>
                 <i class="fas fa-chevron-right link-arrow" aria-hidden="true"></i>
             </a>
-
-            <a href="#community" class="link-item">
-                <div class="link-content">
-                    <i class="fas fa-users link-icon" aria-hidden="true"></i>
-                    <span class="link-text">COMMUNITY</span>
-                </div>
-                <i class="fas fa-chevron-right link-arrow" aria-hidden="true"></i>
-            </a>
-
-            <a href="#contact" class="link-item">
+            <a href="mailto:falsepostivedesigns@outlook.com" class="link-item">
                 <div class="link-content">
                     <i class="fas fa-envelope link-icon" aria-hidden="true"></i>
-                    <span class="link-text">CONTACT</span>
+                    <span class="link-text">Contact</span>
                 </div>
                 <i class="fas fa-chevron-right link-arrow" aria-hidden="true"></i>
             </a>
         </nav>
+
+        <section id="about" style="margin: 40px 0 0 0; color: #fff; text-align: left;">
+            <h2 style="color:#00ffff; font-size:1.2em; margin-bottom:8px;">About Us</h2>
+            <p style="font-size:14px; color:#b5fcff;">
+                False+ is an independent fashion initiative dedicated to merging innovative design and digital privacy. Our mission is to empower individuals against surveillance culture by creating clothing and accessories that make a statement—both visually and technologically. Each piece is designed with resistance in mind, inspired by cyberpunk, glitch art, and tactical aesthetics.
+            </p>
+        </section>
+
+        <section id="about-tech" style="margin: 32px 0 0 0; color: #fff; text-align: left;">
+            <h2 style="color:#00ffff; font-size:1.2em; margin-bottom:8px;">About the Tech</h2>
+            <p style="font-size:14px; color:#b5fcff;">
+                Our apparel incorporates anti-surveillance and privacy-inspired design elements, such as reflective materials and unique patterns that can confuse facial recognition algorithms. We research and apply cutting-edge textile techniques to help you reclaim autonomy and resist unwanted data collection. The tech evolves as surveillance tools change, so you can always wear the glitch and join the resistance.
+            </p>
+        </section>
 
         <footer class="footer">
             <div style="margin-bottom: 15px;">
                 <a href="mailto:falsepostivedesigns@outlook.com" class="contact-email">falsepostivedesigns@outlook.com</a>
             </div>
             <div class="copyright">
-                © 2025 FALSE + • DIGITAL RESISTANCE THROUGH FASHION
+                © 2025 FALSE + • Join the resistance. Wear the glitch.
             </div>
         </footer>
     </main>
@@ -384,22 +305,10 @@
             item.addEventListener('mouseenter', function() {
                 this.style.background = 'rgba(0, 255, 255, 0.1)';
             });
-            
             item.addEventListener('mouseleave', function() {
                 this.style.background = 'rgba(255, 255, 255, 0.05)';
             });
         });
-
-        // Random glitch effect on logo
-        setInterval(() => {
-            const logo = document.querySelector('.logo');
-            if (Math.random() < 0.1) {
-                logo.style.textShadow = '2px 0 #ff0000, -2px 0 #00ff00';
-                setTimeout(() => {
-                    logo.style.textShadow = '0 0 30px rgba(0, 255, 255, 0.3)';
-                }, 100);
-            }
-        }, 2000);
     </script>
 </body>
 </html>
