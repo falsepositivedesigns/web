@@ -95,6 +95,14 @@
             position: relative;
             z-index: 2;
         }
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 15px;
+            }
+            .banner-image {
+                max-width: 95vw;
+            }
+        }
         .header {
             text-align: center;
             margin-bottom: 40px;
@@ -128,6 +136,59 @@
             object-fit: cover;
             border-radius: 50%;
         }
+
+        /* Navigation Styles */
+        .main-nav {
+            width: 100%;
+            margin: 0 auto 32px auto;
+            padding: 0;
+        }
+        .main-nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 22px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .main-nav li {}
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Courier New', monospace;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 4px 2px;
+            border-radius: 3px;
+            transition: color 0.2s, background 0.2s;
+        }
+        .main-nav a:hover,
+        .main-nav a:focus {
+            color: #00ffff;
+            background: rgba(0,255,255,0.07);
+        }
+        .main-nav .brand-link {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00ffff;
+            letter-spacing: 0.8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: none!important;
+        }
+        .main-nav .bluesky-link svg {
+            width: 24px;
+            height: 24px;
+            color: #00ffff;
+            display: block;
+        }
+        .main-nav .bluesky-link:focus svg,
+        .main-nav .bluesky-link:hover svg {
+            color: #ffffff;
+        }
+
         .links {
             display: flex;
             flex-direction: column;
@@ -226,22 +287,57 @@
             text-decoration: underline;
         }
         @media (max-width: 480px) {
-            .container {
-                padding: 30px 15px;
-            }
-            .banner-image {
-                max-width: 95vw;
-            }
-            .profile-image {
-                width: 100px;
-                height: 100px;
-                font-size: 40px;
+            .main-nav ul {
+                gap: 10px;
+                font-size: 13px !important;
             }
         }
     </style>
 </head>
 <body>
     <div class="noise-overlay"></div>
+    <!-- Start Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <!-- Brand/Home Link -->
+        <li>
+          <a href="index.html" class="brand-link" aria-label="False Plus home page">
+            False&nbsp;+:
+          </a>
+        </li>
+        <li>
+          <a href="https://www.contrado.com/stores/false-positive-designs" target="_blank" rel="noopener">
+            Shop
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="tech.html">
+            About the Tech
+          </a>
+        </li>
+        <li>
+          <a href="mailto:falsepostivedesigns@outlook.com">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a class="bluesky-link"
+             href="https://bsky.app/profile/falsepostive.bsky.social"
+             target="_blank" rel="noopener" title="Bluesky"
+             aria-label="Bluesky">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+              <path d="M8.65 15.08c-1.94-2.11-5.04-2.18-6.47-.66-1.4 1.48-.92 4.06 1.04 6.01 3.13 3.13 9.53 4.77 11.52 5.18 2.29.48 2.92-.97 2.56-1.87-.4-.97-2.16-2.94-3.91-4.7.15-1.17-2.01-3.11-2.74-3.96zm14.7 0c1.94-2.11 5.04-2.18 6.47-.66 1.4 1.48.92 4.06-1.04 6.01-3.13 3.13-9.53 4.77-11.52 5.18-2.29.48-2.92-.97-2.56-1.87.4-.97 2.16-2.94 3.91-4.7-.14-1.17 2.01-3.11 2.74-3.96zm-7.7-4.93c.5-.67 1.36-1.07 2.36-1.07 1.01 0 1.86.4 2.36 1.07.54.72.63 1.72.28 2.9-.3.96-.97 1.93-1.72 2.52-.21.17-.51.17-.72 0-.75-.59-1.42-1.56-1.72-2.52-.35-1.18-.25-2.18.28-2.9zm10.92-3.12c-2.68-4.44-8.67-3.8-10.58-2.38-1.91-1.43-7.9-2.07-10.58 2.38C2.37 11.59 6.09 18.38 16 18.38s13.63-6.78 10.43-11.35z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Navigation -->
     <main class="container">
         <header class="header">
             <img 
@@ -254,7 +350,7 @@
                 <img src="https://raw.githubusercontent.com/falsepositivedesigns/web/main/assets/false_logo.png" alt="False+ Logo - Digital Privacy Fashion Brand" />
             </div>
         </header>
-
+        <!-- (Optional) Links grid or your landing page content goes here -->
         <nav class="links">
             <a href="https://www.contrado.com/stores/false-positive-designs" class="link-item" rel="noopener" target="_blank">
                 <div class="link-content">
