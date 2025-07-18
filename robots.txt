@@ -13,5 +13,5 @@ Disallow: /private/
 Disallow: /admin/
 Disallow: /search
 
-# Sitemap location (optional; update with your real sitemap path if used)
-# Sitemap: https://falsepositivedesigns.com/sitemap.xml
+# Sitemap location 
+# Sitemap: https://github.com/falsepositivedesigns/web/blob/main/sitemap.xml
