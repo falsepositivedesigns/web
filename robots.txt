@@ -1,0 +1,17 @@
+# robots.txt for falsepositivedesigns.com
+
+# Allow all search engines complete access to the site
+User-agent: *
+Allow: /
+
+# Block indexing of common private or system directories (adjust if you use any)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Block crawling of search or admin pages if you use them
+Disallow: /admin/
+Disallow: /search
+
+# Sitemap location (optional; update with your real sitemap path if used)
+# Sitemap: https://falsepositivedesigns.com/sitemap.xml
