@@ -8,6 +8,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://falsepositivedesigns.com/collections.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://falsepositivedesigns.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
