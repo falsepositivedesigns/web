@@ -133,6 +133,26 @@
             list-style: disc;
             margin-bottom: 1px;
         }
+        .test-results-image-block {
+            margin-top: 18px;
+            text-align: center;
+        }
+        .test-results-image-block img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 14px rgba(0,255,255,0.09);
+            margin-bottom: 5px;
+        }
+        .test-results-image-block a {
+            display: inline-block;
+            color: #00ffff;
+            font-size: 14px;
+            text-decoration: underline;
+            margin-top: 3px;
+        }
+        .test-results-image-block a:hover {
+            color: #00e3d7;
+        }
         @media (max-width: 580px) {
             .collections-container { padding: 20px 6px; }
             .header .banner-image { max-width: 98vw; }
@@ -210,6 +230,17 @@
                         <span class="check">✅ EXCELLENT:</span> High false positive rate - very confusing to AI<br>
                         <span class="check">✅ HIGH COMPLEXITY:</span> Dense edge patterns good for disruption
                     </div>
+                    <div class="test-results-image-block">
+                        <a href="https://raw.githubusercontent.com/falsepositivedesigns/web/main/assets/specter_results.png" 
+                           target="_blank" 
+                           rel="noopener">
+                            <img src="https://raw.githubusercontent.com/falsepositivedesigns/web/main/assets/specter_results.png" 
+                                 alt="Specter Styles Test Results"
+                            >
+                            <br>
+                            See full size test result
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- --- END SPECTER STYLES COLLECTION CARD --- -->
@@ -228,4 +259,3 @@
     </main>
 </body>
 </html>
-
