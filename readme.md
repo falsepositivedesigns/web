@@ -15,5 +15,5 @@ This repository contains the static website files that power the False+ web expe
 - **Legal:** Privacy policy and legal information
 - **Sitemap/Robots:** SEO and crawler support
 
-## File Structure
+
 
